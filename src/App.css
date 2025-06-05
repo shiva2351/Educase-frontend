@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:2px solid red;
+}
+.app-card{
+  width:60vw;
+  height: 100vh;
+  border:2px solid yellow;
 }
 
 .App-logo {
