@@ -1,11 +1,7 @@
 import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
-  width: 375px;
-  background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 2rem;
+ 
   text-align: center;
 `;
 
@@ -29,11 +25,46 @@ export const NavButton = styled.button`
 
 
 export const Image=styled.img`
-  width:100px;
-  height:100px;
+  width:80px;
+  height:80px;
+  border-radius:100px;
+  margin-right:20px;
+
 `;
-
-
 export const Procard=styled.div`
   display:flex;
+  border:2px solid blue;
+  align-content:center;
+  padding:20px
+  
 `;
+
+export const Prodiv=styled.div`
+  display:flex;
+  flex-direction:column;
+  border:2px solid red;
+  padding:20px
+
+`;
+
+export const Prohead=styled.div`
+  display:flex;white;
+  background-color:white;
+  shadow:2;
+  height:10vh;
+  display:flex;
+  align-items:center;
+
+`;
+
+
+export const Proheader=styled.div`
+font-weight:normal;
+padding-left:20px
+`;
+
+export const Procontent=styled.div`
+background-color:lightgrey;
+height:90vh;
+border:2px solid red;
+`

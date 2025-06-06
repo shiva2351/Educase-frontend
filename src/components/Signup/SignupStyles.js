@@ -24,15 +24,47 @@ export const Input = styled.input`
 `;
 
 export const FormButton = styled.button`
-  background-color: #007bff;
+ 
+  background-color:rgb(108 37 255/var(--tw-bg-opacity,1));
   color: white;
   padding: 10px 15px;
+  
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
+  width:100%;
+  font-weight:540;
+  font-size:16px
 `;
 
 export const InputField=styled.input`
-type:password
+type:${(props)=>(props.fieldType)};
+id:${(props)=>(props.fieldType)}; 
+title:${(props)=>(props.fieldType)};
+ placeholder:${(props)=>(props.fieldType)};
+ width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  &:focus {
+    outline: none;
+    border-color: #5b21b6;
+  }
+
 `
+
+export const InputCard=styled.div`
+         display:flex;
+         flex-direction:column;
+         border:2px solid red;`;
+
+
+export const Label = styled.label`
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+`;

@@ -1,54 +1,71 @@
 
 
-import { PageWrapper, Heading, Input, FormButton,InputField } from './SignupStyles';
+import { PageWrapper, Heading, Input, FormButton,InputField,InputCard ,Label} from './SignupStyles';
 import { Link } from 'react-router-dom';
 
 function Signup() {
   return (
     <PageWrapper>
-      <Heading>Sign Up</Heading>
-      <Input type="text" placeholder="Name" />
-      <Input type="email" placeholder="Email" />
-      <Input type="password" placeholder="Password" />
+      <Heading>Create your
+PopX account</Heading>
 
-        <InputField
-                            fieldType="text"
-                            fieldId="fullName"
+
+        <InputCard >
+          <Label htmlFor='fullName' >Name</Label>
+
+        <InputField  type="text"
+                            id="fullName"
                             fieldTitle="Full Name"
-                            fieldPlaceholder="Enter full name"
-                            
-                        />
-                        {/* Phone number */}
-                        <InputField
-                            fieldType="text"
+                    placeholder="Enter full name"/>
+        </InputCard>
+
+ <InputCard >
+          <Label htmlFor='fullName' >Name</Label>
+ <InputField
+                            type="text"
                             fieldId="phoneNumber"
-                            fieldTitle="Phone number"
-                            fieldPlaceholder="Enter phone number"
+                            title="Phone number"
+                            placeholder="Enter phone number"
                         />
-                        {/* Email address */}
-                        <InputField
-                            fieldType="text"
-                            fieldId="email"
-                            fieldTitle="Email address"
-                            fieldPlaceholder="Enter your email"
+        </InputCard>
+
+
+ <InputCard >
+          <Label htmlFor='fullName' >Name</Label> <InputField
+                            type="text"
+                            id="email"
+                            title="Email address"
+                            placeholder="Enter your email"
                         />
-                        <InputField
-                            fieldType="password"
-                            fieldId="password"
-                            fieldTitle="Password"
-                            fieldPlaceholder="Enter password"
+        </InputCard>
+
+         <InputCard >
+          <Label htmlFor='fullName' >Name</Label> 
+          <InputField
+                            type="password"
+                            id="password"
+                            title="Password"
+                            placeholder="Enter password"
                         />
-                        <InputField
-                            fieldType="text"
-                            fieldId="companyName"
-                            fieldTitle="Company name"
-                            fieldPlaceholder="Enter company name"
+        </InputCard>
+          <Label htmlFor='fullName' >Name</Label> 
+
+                       
+                     <InputCard > <InputField
+                            type="text"
+                            id="companyName"
+                            title="Company name"
+                            placeholder="Enter company name"
                             isRequired={false}
                         />
+        </InputCard>
 
 
-      <FormButton>Register</FormButton>
-      <p>Already have an account? <Link to="/signin">Login</Link></p>
+                       
+
+
+      <Link to="/profile"><FormButton>
+        Create Account</FormButton></Link>
     </PageWrapper>
   );
 }

@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 function Login() {
   return (
     <PageWrapper>
-      <Heading>Login</Heading>
+      <Heading>Signin to your
+PopX account</Heading>
+<p>Lorem ipsum dolor sit amet,
+consectetur adipisicing elit.</p>
       <Input type="email" placeholder="Email" />
       <Input type="password" placeholder="Password" />
       <FormButton>Login</FormButton>
