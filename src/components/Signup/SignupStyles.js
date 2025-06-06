@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
-  width: 375px;
-  background-color: white;
+ width: 375px;
+  background-color: #e5e7eb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 2rem;
-  text-align: center;
+  height:100vh;
+  border:1px solid gray;
 `;
 
 export const Heading = styled.h1`
@@ -34,7 +35,7 @@ export const FormButton = styled.button`
   cursor: pointer;
   width:100%;
   font-weight:540;
-  font-size:16px
+  font-size:16px;
 `;
 
 export const InputField=styled.input`

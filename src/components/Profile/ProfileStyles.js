@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
- 
+ width: 375px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border:1px solid gray;
   text-align: center;
 `;
 
@@ -33,7 +37,6 @@ export const Image=styled.img`
 `;
 export const Procard=styled.div`
   display:flex;
-  border:2px solid blue;
   align-content:center;
   padding:20px
   
@@ -42,7 +45,6 @@ export const Procard=styled.div`
 export const Prodiv=styled.div`
   display:flex;
   flex-direction:column;
-  border:2px solid red;
   padding:20px
 
 `;
@@ -66,5 +68,4 @@ padding-left:20px
 export const Procontent=styled.div`
 background-color:lightgrey;
 height:90vh;
-border:2px solid red;
 `

@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
   width: 375px;
-  background-color: white;
+  background-color: #e5e7eb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 2rem;
-  text-align: center;
+  height:100vh;
+  border:1px solid gray;
 `;
 
 export const Heading = styled.h1`
@@ -27,18 +28,26 @@ export const NavButton = styled.button`
 
 
 export const Input = styled.input`
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  width: 90%;
+  padding:10px 15px;
+  
   border: 1px solid #ccc;
   border-radius: 8px;
 `;
 export const FormButton = styled.button`
-  background-color: #007bff;
+background-color:rgb(206 186 251 / var(--tw-bg-opacity, 1));
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1rem;
+`;
+
+export const Logindiv = styled.div`
+  border:2px solid yellow;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-grow;
+
 `;

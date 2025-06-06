@@ -8,13 +8,12 @@ import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 function App() {
   return (
     <div className="App">
-      <div className="app-card">
       <Switch>   
                 <Route exact path="/" component={LandingPage} />
                 <Route exact path="/profile" component={Profile} />
                 <Route path="/signin" component={Login} />
                 <Route path="/signup" component={Signup} />
-      </Switch></div>
+      </Switch>
     </div>
   );
 }
